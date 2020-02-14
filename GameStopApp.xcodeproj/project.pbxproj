@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041F179423F1AD53004CFB1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041F179323F1AD52004CFB1F /* GoogleService-Info.plist */; };
+		04A5A67023F1B137005707D2 /* Pods_GameStopApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D9B8C744A76D20DE10D9E9 /* Pods_GameStopApp.framework */; };
+		04A5A67123F1B137005707D2 /* Pods_GameStopApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9D9B8C744A76D20DE10D9E9 /* Pods_GameStopApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04D8EF6023F0732E00250A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EF5F23F0732E00250A55 /* AppDelegate.swift */; };
+		04D8EF6223F0732E00250A55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EF6123F0732E00250A55 /* SceneDelegate.swift */; };
+		04D8EF6423F0732E00250A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EF6323F0732E00250A55 /* ViewController.swift */; };
+		04D8EF6723F0732E00250A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D8EF6523F0732E00250A55 /* Main.storyboard */; };
+		04D8EF6A23F0732E00250A55 /* GameStopApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EF6823F0732E00250A55 /* GameStopApp.xcdatamodeld */; };
+		04D8EF6C23F0733500250A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D8EF6B23F0733500250A55 /* Assets.xcassets */; };
+		04D8EF6F23F0733500250A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D8EF6D23F0733500250A55 /* LaunchScreen.storyboard */; };
+		04D8EF7D23F0757000250A55 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EF7C23F0757000250A55 /* MainViewModel.swift */; };
+		04D8EF7F23F0759C00250A55 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EF7E23F0759C00250A55 /* ApiKey.swift */; };
+		04D8EFA723F0F0CA00250A55 /* ReVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EFA623F0F0CA00250A55 /* ReVIEW.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043B8F8B23F45BB50041E45A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D8EF5423F0732E00250A55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D8EF5B23F0732E00250A55;
+			remoteInfo = GameStopApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04A5A67223F1B137005707D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04A5A67123F1B137005707D2 /* Pods_GameStopApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		041F179323F1AD52004CFB1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		043B8F8623F45BB50041E45A /* GameStopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameStopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D8EF5C23F0732E00250A55 /* GameStopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameStopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D8EF5F23F0732E00250A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04D8EF6123F0732E00250A55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04D8EF6323F0732E00250A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04D8EF6623F0732E00250A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04D8EF6923F0732E00250A55 /* GameStopApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameStopApp.xcdatamodel; sourceTree = "<group>"; };
+		04D8EF6B23F0733500250A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04D8EF6E23F0733500250A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04D8EF7023F0733500250A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D8EF7C23F0757000250A55 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		04D8EF7E23F0759C00250A55 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		04D8EFA623F0F0CA00250A55 /* ReVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReVIEW.swift; path = /Users/mcs/Desktop/GameStopApp/GameStopApp/View/ReVIEW.swift; sourceTree = "<absolute>"; };
+		2593EB1D4422F38D9CD98BF8 /* Pods-GameStopApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameStopApp.debug.xcconfig"; path = "Target Support Files/Pods-GameStopApp/Pods-GameStopApp.debug.xcconfig"; sourceTree = "<group>"; };
+		851746859B0D217F8C9FE982 /* Pods-GameStopApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameStopApp.release.xcconfig"; path = "Target Support Files/Pods-GameStopApp/Pods-GameStopApp.release.xcconfig"; sourceTree = "<group>"; };
+		F9D9B8C744A76D20DE10D9E9 /* Pods_GameStopApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameStopApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043B8F8323F45BB50041E45A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D8EF5923F0732E00250A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A5A67023F1B137005707D2 /* Pods_GameStopApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D8EF5323F0732E00250A55 = {
+			isa = PBXGroup;
+			children = (
+				04D8EF5E23F0732E00250A55 /* GameStopApp */,
+				04D8EF5D23F0732E00250A55 /* Products */,
+				E2A683C5A06E1BACD9C8BC01 /* Pods */,
+				76C4C0BA3F6E12D14609EAA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04D8EF5D23F0732E00250A55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EF5C23F0732E00250A55 /* GameStopApp.app */,
+				043B8F8623F45BB50041E45A /* GameStopAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D8EF5E23F0732E00250A55 /* GameStopApp */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EF5F23F0732E00250A55 /* AppDelegate.swift */,
+				04D8EF6123F0732E00250A55 /* SceneDelegate.swift */,
+				04D8EFA323F0EFB600250A55 /* Api */,
+				04D8EFA523F0EFF800250A55 /* View */,
+				04D8EFA423F0EFCB00250A55 /* Storyboard */,
+				04D8EFA823F111E200250A55 /* ViewModels */,
+				04D8EF6B23F0733500250A55 /* Assets.xcassets */,
+				04D8EF6D23F0733500250A55 /* LaunchScreen.storyboard */,
+				04D8EF7023F0733500250A55 /* Info.plist */,
+				041F179323F1AD52004CFB1F /* GoogleService-Info.plist */,
+				04D8EF6823F0732E00250A55 /* GameStopApp.xcdatamodeld */,
+			);
+			path = GameStopApp;
+			sourceTree = "<group>";
+		};
+		04D8EFA323F0EFB600250A55 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EF7E23F0759C00250A55 /* ApiKey.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		04D8EFA423F0EFCB00250A55 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EF6523F0732E00250A55 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		04D8EFA523F0EFF800250A55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EF6323F0732E00250A55 /* ViewController.swift */,
+				04D8EFA623F0F0CA00250A55 /* ReVIEW.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04D8EFA823F111E200250A55 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EF7C23F0757000250A55 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		76C4C0BA3F6E12D14609EAA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9B8C744A76D20DE10D9E9 /* Pods_GameStopApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A683C5A06E1BACD9C8BC01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2593EB1D4422F38D9CD98BF8 /* Pods-GameStopApp.debug.xcconfig */,
+				851746859B0D217F8C9FE982 /* Pods-GameStopApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043B8F8523F45BB50041E45A /* GameStopAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043B8F8D23F45BB50041E45A /* Build configuration list for PBXNativeTarget "GameStopAppTests" */;
+			buildPhases = (
+				043B8F8223F45BB50041E45A /* Sources */,
+				043B8F8323F45BB50041E45A /* Frameworks */,
+				043B8F8423F45BB50041E45A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043B8F8C23F45BB50041E45A /* PBXTargetDependency */,
+			);
+			name = GameStopAppTests;
+			productName = GameStopAppTests;
+			productReference = 043B8F8623F45BB50041E45A /* GameStopAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04D8EF5B23F0732E00250A55 /* GameStopApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D8EF7323F0733500250A55 /* Build configuration list for PBXNativeTarget "GameStopApp" */;
+			buildPhases = (
+				082B904B339215AD6BDA59FB /* [CP] Check Pods Manifest.lock */,
+				04D8EF5823F0732E00250A55 /* Sources */,
+				04D8EF5923F0732E00250A55 /* Frameworks */,
+				04D8EF5A23F0732E00250A55 /* Resources */,
+				CB0C31771573CB8D6A70936A /* [CP] Embed Pods Frameworks */,
+				04A5A67223F1B137005707D2 /* Embed Frameworks */,
+				044FC29723F1B2EE0075B328 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameStopApp;
+			productName = GameStopApp;
+			productReference = 04D8EF5C23F0732E00250A55 /* GameStopApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D8EF5423F0732E00250A55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = MCS;
+				TargetAttributes = {
+					043B8F8523F45BB50041E45A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 04D8EF5B23F0732E00250A55;
+					};
+					04D8EF5B23F0732E00250A55 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 04D8EF5723F0732E00250A55 /* Build configuration list for PBXProject "GameStopApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D8EF5323F0732E00250A55;
+			productRefGroup = 04D8EF5D23F0732E00250A55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D8EF5B23F0732E00250A55 /* GameStopApp */,
+				043B8F8523F45BB50041E45A /* GameStopAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043B8F8423F45BB50041E45A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D8EF5A23F0732E00250A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D8EF6F23F0733500250A55 /* LaunchScreen.storyboard in Resources */,
+				041F179423F1AD53004CFB1F /* GoogleService-Info.plist in Resources */,
+				04D8EF6C23F0733500250A55 /* Assets.xcassets in Resources */,
+				04D8EF6723F0732E00250A55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044FC29723F1B2EE0075B328 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n";
+		};
+		082B904B339215AD6BDA59FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameStopApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0C31771573CB8D6A70936A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameStopApp/Pods-GameStopApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameStopApp/Pods-GameStopApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameStopApp/Pods-GameStopApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043B8F8223F45BB50041E45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D8EF5823F0732E00250A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D8EF7D23F0757000250A55 /* MainViewModel.swift in Sources */,
+				04D8EFA723F0F0CA00250A55 /* ReVIEW.swift in Sources */,
+				04D8EF6423F0732E00250A55 /* ViewController.swift in Sources */,
+				04D8EF6A23F0732E00250A55 /* GameStopApp.xcdatamodeld in Sources */,
+				04D8EF6023F0732E00250A55 /* AppDelegate.swift in Sources */,
+				04D8EF7F23F0759C00250A55 /* ApiKey.swift in Sources */,
+				04D8EF6223F0732E00250A55 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043B8F8C23F45BB50041E45A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D8EF5B23F0732E00250A55 /* GameStopApp */;
+			targetProxy = 043B8F8B23F45BB50041E45A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04D8EF6523F0732E00250A55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D8EF6623F0732E00250A55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04D8EF6D23F0733500250A55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D8EF6E23F0733500250A55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043B8F8E23F45BB50041E45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR9UN28S6C;
+				INFOPLIST_FILE = GameStopAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mcs.GameStopAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameStopApp.app/GameStopApp";
+			};
+			name = Debug;
+		};
+		043B8F8F23F45BB50041E45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NR9UN28S6C;
+				INFOPLIST_FILE = GameStopAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mcs.GameStopAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameStopApp.app/GameStopApp";
+			};
+			name = Release;
+		};
+		04D8EF7123F0733500250A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04D8EF7223F0733500250A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D8EF7423F0733500250A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2593EB1D4422F38D9CD98BF8 /* Pods-GameStopApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NR9UN28S6C;
+				INFOPLIST_FILE = GameStopApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mcs.GameStopApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04D8EF7523F0733500250A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851746859B0D217F8C9FE982 /* Pods-GameStopApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NR9UN28S6C;
+				INFOPLIST_FILE = GameStopApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mcs.GameStopApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043B8F8D23F45BB50041E45A /* Build configuration list for PBXNativeTarget "GameStopAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043B8F8E23F45BB50041E45A /* Debug */,
+				043B8F8F23F45BB50041E45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D8EF5723F0732E00250A55 /* Build configuration list for PBXProject "GameStopApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D8EF7123F0733500250A55 /* Debug */,
+				04D8EF7223F0733500250A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D8EF7323F0733500250A55 /* Build configuration list for PBXNativeTarget "GameStopApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D8EF7423F0733500250A55 /* Debug */,
+				04D8EF7523F0733500250A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04D8EF6823F0732E00250A55 /* GameStopApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04D8EF6923F0732E00250A55 /* GameStopApp.xcdatamodel */,
+			);
+			currentVersion = 04D8EF6923F0732E00250A55 /* GameStopApp.xcdatamodel */;
+			path = GameStopApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04D8EF5423F0732E00250A55 /* Project object */;
+}
